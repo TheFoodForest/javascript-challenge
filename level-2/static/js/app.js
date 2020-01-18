@@ -11,14 +11,12 @@ button.on('click', function() {
     var inputShape = d3.select('#shape').property('value');
     var tbody = d3.select('tbody');
 
-
     if (inputDate === '') {
             inputDate = RegExp("[\\s\\S]*");
         }
     else {
         inputDate = RegExp(inputDate)
     }
-
 
 
     if (inputCity === '') {

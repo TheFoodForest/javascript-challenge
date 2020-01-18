@@ -11,8 +11,9 @@ button.on('click', function() {
         return entry.datetime === input;
     }
 
-    var filtered = data.filter(matchDate)
-    if (filtered.lengh > 0) {  
+    var filtered = data.filter(matchDate);
+    console.log(filtered);
+    if (filtered.length > 0) {  
         filtered.forEach(value => {
             var row = tbody.append('tr');
             row.append('td').text(value.datetime);
